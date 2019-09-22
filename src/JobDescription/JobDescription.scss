@@ -17,6 +17,10 @@
     padding-right: 3rem;
     padding-top: 1.5rem;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &--image {
       width: 10rem;
     }

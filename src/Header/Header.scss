@@ -5,7 +5,7 @@
 
   &__tab-container {
     display: inline-flex;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 0;
 
     &--button {
       background-color: transparent;
@@ -16,7 +16,6 @@
       font-size: 24px;
       font-weight: 300;
       outline: 0;
-      padding-right: 1rem;
 
       &:hover {
         font-weight: 400;
