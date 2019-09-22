@@ -1,0 +1,24 @@
+.job-description-container {
+  display: flex;
+  padding-bottom: 5rem;
+
+  &__description {
+    &--timeframe {
+      font-weight: 200;
+      margin-top: 0;
+    }
+
+    &--title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+
+    &--image {
+      width: 10rem;
+    }
+  }
+}
