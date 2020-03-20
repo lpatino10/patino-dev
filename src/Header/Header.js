@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 
+import { AboutMe } from '../AboutMe/AboutMe'
 import './Header.scss';
 
 export const Header = ({ onTabSelect }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <div className="header">
+    <section className="header">
+      <AboutMe/>
+    </section>
+  );
+
+  {/* <div className="header">
       <div className="header__tab-container">
         <button
           className={`header__tab-container--button${selectedTab === 0 ? ' header__tab-container--button-selected' : ''}`}
@@ -29,6 +35,5 @@ export const Header = ({ onTabSelect }) => {
           Experience
         </button>
       </div>
-    </div>
-  );
+    </div> */}
 };
