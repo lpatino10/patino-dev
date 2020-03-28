@@ -6,7 +6,7 @@ import { JobDescription } from '../JobDescription/JobDescription';
 
 import './Experience.scss';
 
-export const Experience = () => {
+export const Experience = React.forwardRef((_, ref) => {
   const ibmDescription = [
     'Here, the goal could be summed up as improving the way users (developers!) interact with Watson.',
     'One piece of this was work with the Watson SDKs. My team developed a fork of the open-source'
@@ -23,7 +23,7 @@ export const Experience = () => {
   ];
 
   return (
-    <div className="experience-container">
+    <div className="experience" ref={ref}>
       <JobDescription
         title="IBM Watson Developer Experience"
         timeframe="2017 - Present"
@@ -38,4 +38,4 @@ export const Experience = () => {
       />
     </div>
   );
-};
+});

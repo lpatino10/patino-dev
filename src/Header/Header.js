@@ -1,39 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { AboutMe } from '../AboutMe/AboutMe'
 import './Header.scss';
 
-export const Header = ({ onTabSelect }) => {
-  const [selectedTab, setSelectedTab] = useState(0);
-
+export const Header = React.forwardRef((_, ref) => {
   return (
-    <section className="header">
+    <section className="header" ref={ref}>
       <AboutMe/>
     </section>
   );
-
-  {/* <div className="header">
-      <div className="header__tab-container">
-        <button
-          className={`header__tab-container--button${selectedTab === 0 ? ' header__tab-container--button-selected' : ''}`}
-          href="#"
-          onClick={() => {
-            setSelectedTab(0);
-            onTabSelect(0);
-          }}
-        >
-          About me
-        </button>
-        <button
-          className={`header__tab-container--button${selectedTab === 1 ? ' header__tab-container--button-selected' : ''}`}
-          href="#"
-          onClick={() => {
-            setSelectedTab(1);
-            onTabSelect(1);
-          }}
-        >
-          Experience
-        </button>
-      </div>
-    </div> */}
-};
+});
