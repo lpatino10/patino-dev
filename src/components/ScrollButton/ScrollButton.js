@@ -1,10 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 
+import { usePrevious } from '../../hooks/usePrevious';
 import './ScrollButton.scss';
 
 export const ScrollButton = ({ elementToScrollTo, onClick }) => {
   const button = useRef(null);
   const arrow = useRef(null);
+
+  const previousElement = usePrevious(elementToScrollTo);
+
+  useEffect(() => {
+    if (previousElement !== undefined && previousElement !== elementToScrollTo) {
+      arrow.current.classList.toggle("flip");
+    }
+  }, [elementToScrollTo]);
 
   useEffect(() => {
     const handler = () => {
@@ -12,7 +21,6 @@ export const ScrollButton = ({ elementToScrollTo, onClick }) => {
         behavior: 'smooth',
         top: elementToScrollTo.current.offsetTop,
       });
-      arrow.current.classList.toggle("flip");
       onClick();
     };
 
