@@ -1,8 +1,8 @@
 import React from 'react';
 
-import linkedInIcon from '../images/linkedin.png';
-import emailIcon from '../images/email.png';
-import githubIcon from '../images/github.png';
+import linkedInIcon from '../../images/linkedin.png';
+import emailIcon from '../../images/email.png';
+import githubIcon from '../../images/github.png';
 
 import './Footer.scss';
 

@@ -1,12 +1,18 @@
 import React from 'react';
 
-import watsonLogo from '../images/watson-logo.png'
-import hylandLogo from '../images/hyland-logo.png'
+import toastLogo from '../../images/toast-logo.png';
+import watsonLogo from '../../images/watson-logo.png';
+import hylandLogo from '../../images/hyland-logo.png';
 import { JobDescription } from '../JobDescription/JobDescription';
 
 import './Experience.scss';
 
 export const Experience = React.forwardRef((_, ref) => {
+  const toastDescription = [
+    'The Capital team at Toast builds software to help provide funds for restaurants to be able to do what they do best.',
+    'The software encompasses the whole lifecycle, from the loan application to the repayment and settlement process.' +
+    ' Most of it is implemented using Java microservices, with React webpages for any interactive pieces.'
+  ]
   const ibmDescription = [
     'Here, the goal could be summed up as improving the way users (developers!) interact with Watson.',
     'One piece of this was work with the Watson SDKs. My team developed a fork of the open-source'
@@ -25,8 +31,14 @@ export const Experience = React.forwardRef((_, ref) => {
   return (
     <div className="experience" ref={ref}>
       <JobDescription
+        title="Toast Capital"
+        timeframe="2020 - Present"
+        description={toastDescription}
+        logo={toastLogo}
+      />
+      <JobDescription
         title="IBM Watson Developer Experience"
-        timeframe="2017 - Present"
+        timeframe="2017 - 2020"
         description={ibmDescription}
         logo={watsonLogo}
       />

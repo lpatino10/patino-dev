@@ -1,6 +1,6 @@
 import React from 'react';
 
-import pic from '../images/me.png'
+import pic from '../../images/me.png'
 import { Bio } from '../Bio/Bio';
 import './AboutMe.scss';
 
