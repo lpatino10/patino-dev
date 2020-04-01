@@ -1,8 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 
 import { Header } from '../Header/Header';
-import { Experience } from '../Experience/Experience'
-import { Footer } from '../Footer/Footer'
+import { Experience } from '../Experience/Experience';
 import { ScrollButton } from '../ScrollButton/ScrollButton';
 import './App.scss';
 
@@ -40,7 +39,6 @@ const App = () => {
     <>
       <Header ref={header} />
       <Experience ref={experience} />
-      <Footer/>
       <ScrollButton
         elementToScrollTo={scrollToTop ? header : experience}
         onClick={() => {
