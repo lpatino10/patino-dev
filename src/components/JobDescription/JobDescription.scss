@@ -1,8 +1,11 @@
 .job-description-container {
   display: flex;
-  padding-bottom: 5rem;
+  max-width: 1024px;
+  padding-bottom: 4rem;
 
   &__description {
+    font-size: 18px;
+
     &--timeframe {
       font-weight: 200;
       margin-top: 0;
@@ -11,14 +14,23 @@
     &--title {
       margin-bottom: 0;
     }
+
+    @media (min-width: 576px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
   }
 
   &__logo {
+    display: none;
     padding-right: 3rem;
     padding-top: 1.5rem;
 
-    @media (max-width: 768px) {
-      display: none;
+    @media (min-width: 576px) {
+      display: unset;
     }
 
     &--image {

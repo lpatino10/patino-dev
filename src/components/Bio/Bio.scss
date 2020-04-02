@@ -1,0 +1,17 @@
+.bio-container {
+  text-align: center;
+  width: 55%;
+
+  p {
+    font-size: 22px;
+    font-weight: 300;
+
+    @media (min-width: 576px) {
+      font-size: 24px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+}
