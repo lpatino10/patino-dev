@@ -17,9 +17,17 @@ export const ScrollButton = ({ elementToScrollTo, onClick }) => {
 
   useEffect(() => {
     const handler = () => {
+      let scrollTop = elementToScrollTo.current.offsetTop;
+
+      // The offsetTop of the header might be something larger than 0 since we're using the sticky
+      // positioning, so we'll go ahead and just always use 0.
+      if (elementToScrollTo.current.className === 'header') {
+        scrollTop = 0;
+      }
+
       window.scrollTo({
         behavior: 'smooth',
-        top: elementToScrollTo.current.offsetTop,
+        top: scrollTop,
       });
       onClick();
     };
