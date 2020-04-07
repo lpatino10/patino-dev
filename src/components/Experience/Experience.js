@@ -32,7 +32,7 @@ export const Experience = React.forwardRef((_, ref) => {
     <div className="experience" ref={ref}>
       <JobDescription
         title="Toast Capital"
-        timeframe="2020 - Present"
+        timeframe="2020 - 2020"
         description={toastDescription}
         logo={toastLogo}
       />
