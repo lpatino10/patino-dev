@@ -10,20 +10,16 @@
   }
 
   .personal-pic {
-    max-height: 12rem;
-    max-width: 12rem;
+    flex: 1;
+    max-height: 16rem;
+    max-width: 16rem;
+    min-height: 12rem;
+    min-width: 12rem;
     padding-bottom: 1rem;
 
-    @media (min-width: 576px) {
-      max-height: 14rem;
-      max-width: 14rem;
-    }
-
     @media (min-width: 768px) {
-      max-height: 16rem;
-      max-width: 16rem;
       padding-bottom: 0;
-      padding-right: 1rem;
+      padding-right: 2rem;
     }
   }
 }

@@ -28,13 +28,11 @@
     display: none;
     padding-right: 3rem;
     padding-top: 1.5rem;
+    min-width: 160px;
+    z-index: -1;
 
     @media (min-width: 576px) {
       display: unset;
-    }
-
-    &--image {
-      width: 10rem;
     }
   }
 }

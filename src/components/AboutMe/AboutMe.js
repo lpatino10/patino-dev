@@ -1,12 +1,13 @@
 import React from 'react';
-
-import pic from '../../images/me.png'
+import { Image } from '../Image/Image';
 import { Bio } from '../Bio/Bio';
 import './AboutMe.scss';
 
 export const AboutMe = () => (
   <div className="about-me-container">
-    <img src={pic} className="personal-pic" alt="me" />
-    <Bio/>
+    <div className="personal-pic">
+      <Image src="me.png" alt="me" />
+    </div>
+    <Bio />
   </div>
 );
