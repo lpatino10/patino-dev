@@ -5,7 +5,7 @@ import { Experience } from '../Experience/Experience';
 import { ScrollButton } from '../ScrollButton/ScrollButton';
 import './App.scss';
 
-const App = () => {
+export const App = () => {
   const header = useRef();
   const experience = useRef();
 
@@ -33,7 +33,7 @@ const App = () => {
     if ((isOnHeaderSection && scrollToTop) || (!isOnHeaderSection && !scrollToTop)) {
       setScrollToTop(!scrollToTop);
     }
-  }, [dividingLineVerticalPos]);
+  }, [dividingLineVerticalPos, scrollToTop]);
 
   return (
     <>
@@ -48,5 +48,3 @@ const App = () => {
     </>
   );
 };
-
-export default App;

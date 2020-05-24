@@ -1,21 +1,24 @@
 import React from 'react';
-
-import linkedInIcon from '../../images/linkedin.png';
-import emailIcon from '../../images/email.png';
-import githubIcon from '../../images/github.png';
+import { Image } from '../Image/Image';
 
 import './ContactLinks.scss';
 
 export const ContactLinks = () => (
   <div className="container">
     <a href="https://github.com/lpatino10">
-      <img src={githubIcon} className="container__link" alt="GitHub profile" />
+      <div className="container__link">
+        <Image src="github.png" alt="GitHub profile" />
+      </div>
     </a>
     <a href="https://www.linkedin.com/in/logan-patino/">
-      <img src={linkedInIcon} className="container__link" alt="LinkedIn profile" />
+      <div className="container__link">
+        <Image src="linkedin.png" alt="LinkedIn profile" />
+      </div>
     </a>
     <a href="mailto:loganpatino10@gmail.com">
-      <img src={emailIcon} className="container__link" alt="email" />
+      <div className="container__link">
+        <Image src="email.png" alt="email" />
+      </div>
     </a>
   </div>
 );

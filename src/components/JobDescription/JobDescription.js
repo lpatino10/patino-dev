@@ -1,11 +1,12 @@
 import React from 'react';
+import { Image } from '../Image/Image';
 
 import './JobDescription.scss';
 
-export const JobDescription = ({ description, logo, timeframe, title }) => (
+export const JobDescription = ({ description, logoSrc, timeframe, title }) => (
   <div className="job-description-container">
     <div className="job-description-container__logo">
-      <img src={logo} className="job-description-container__logo--image" alt="logo" />
+      <Image src={logoSrc} alt="logo" />
     </div>
     <div className="job-description-container__description">
       <h3 className="job-description-container__description--title">
