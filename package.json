@@ -9,9 +9,9 @@
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-sass": "^2.3.2",
-    "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-sharp": "^2.5.3",
+    "gatsby-transformer-sharp": "^5.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
